@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# coding:utf-8
 
 import sys
 
@@ -12,8 +14,22 @@ import sys
 # else:
 #     print (-a)
 
-#输出hello word
+# 输出hello word
+
+#<60        差
+# 60-80      良
+# 80-100     优
+
 print ("helle word")
 
-#name = input('please enter your name: ')
-#print('hello,', name)
+isUpdate = True
+money = 23.1
+say = "ni hao"
+print (isUpdate, money, say)
+
+score = input('请你输入一个分数')
+
+print(score)
+
+name = input('please enter your name: ')
+print('hello,', name)
