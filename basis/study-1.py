@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # coding:utf-8
-
+# https://segmentfault.com/a/1190000009422887
 import sys
 
 # print (sys.platform)
@@ -20,16 +20,249 @@ import sys
 # 60-80      良
 # 80-100     优
 
-print ("helle word")
+'''print ("helle word")
 
 isUpdate = True
 money = 23.1
 say = "ni hao"
-print (isUpdate, money, say)
+print (isUpdate, money, say)'''
 
-score = input('请你输入一个分数')
+# 声明变量
 
-print(score)
+# name = "tianjianyu"
+# 上述代码声明了一个变量：变量名为name，变量的值为"tianjianyu"
+# 变量的作用是在内存的某个位置保存的一个内容
+# 变量定义的规则：
+# <1>变量名只能是 字母、数字或下划线的任意组合
+# <2>变量名的第一个字符不能是数字
+# <3>以下关键字不能声明为变量名
+# ['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']
+# <4>ps:下划线分割
 
-name = input('please enter your name: ')
-print('hello,', name)
+# score = input('请你输入一个分数')
+
+# print(score)
+
+# name = input('please enter your name: ')
+# print('hello,', name)
+
+# 整数
+# 创建
+'''a = 123
+print(type(a))
+# 第二种：
+a = int(123)
+print(type(a))'''
+
+# 转换
+
+'''age = '18'
+#看下类型
+print(type(age))
+#将str转换为int
+new_age = int(age)
+print(type(new_age))'''
+
+
+# 2>布尔值（bool）
+'''a = True
+print(type(a))
+
+b = False
+print(type(b))'''
+
+# 转换：-数字转换：
+'''a = bool(0)
+print(a)
+
+a = bool(1)
+print(a)
+'''
+
+'''a = '123'
+new_a = bool(a)
+print(new_a)
+
+a = ''
+new_a = bool(a)
+print(new_a)'''
+
+
+# 3>字符串
+# 创建：
+'''a = 'tianjianyu'
+print(type(a))
+
+a = str('tianjianyu')
+print(type(a))'''
+
+
+# 转换
+'''a = 19
+print(type(a))
+# print结果为int，为整数
+new_a = str(a)
+print(type(new_a))
+# print结果为str，为字符串'''
+
+# 字符串的拼接：
+'''name = 'tianjianyu'
+gender = '男'
+new_str = name + gender
+print(new_str)'''
+
+# 字符串的格式化
+'''name = 'user:tianjianyu,gender:%s,age:%s'
+new_name = name % ('男', 23)
+print(new_name)'''
+
+# 判断子序列是否在字符串中
+'''name = 'user:tianjianyu,gender:男,age:23'
+if 'tianjianyu' in name:
+    print('yes')
+else:
+    print('no')'''
+
+# 移除空白
+'''name = ' tianjianyu '
+new_name = name.strip()  # y移除左右
+print(new_name)
+
+new_name = name.lstrip()  # 移除左边
+print(new_name)
+
+new_name = name.rstrip()  # 移除右边
+print(new_name)'''
+
+
+# 分割
+'''user_info = 'tianjianyu boy 23'
+new_user_info = user_info.split()
+print(new_user_info)'''
+
+# 长度
+'''user_info = 'tianjianyu boy 23'
+print(len(user_info))
+new_user_info = user_info.split()
+print(len(new_user_info))
+'''
+
+# 索引
+'''val = 'tianjianyu'
+v = val[0]
+print(v)'''
+
+# 切片
+'''val = 'tianjianyu'
+print(val[0])     #第一个
+print(val[0:2])   #第一个到第二个'''
+
+
+# 列表（list）
+
+# 创建
+'''a = ['user', 'age', 'gender']
+print(type(a))
+
+a = list(['user', 'age', 'gender'])
+print(type(a))'''
+
+# 索引
+'''a = ['user', 'age', 'gender']
+print(a[0])'''
+
+# 长度
+'''a = ['user','age','gender']
+print(len(a))
+'''
+# 切片
+'''a = ['user', 'age', 'gender']
+print(a[0::2])'''
+
+# 追加：
+'''a = ['user','age','gender']
+a.append('fuck')
+print(a)'''
+
+# 删除
+'''a = ['user', 'age', 'gender']
+a.remove('user')
+print(a)'''
+
+# 更新
+'''a = ['user', 'age', 'gender']
+a[1] = 'fuck'
+print(a)'''
+
+# for循环：
+'''
+a = ['user', 'age', 'gender']
+for item in a:
+    print(item)'''
+
+# 字典（dict）
+
+# 创建:
+'''a = {
+    'name': 'tianjianyu',
+    'age': 18
+}
+print(type(a))'''
+
+# 基本操作：---1，获取索引值：
+'''a = {
+    'name': 'tianjianyu',
+    'age': 18
+}
+v = a['name']
+print(v)'''
+
+# 增加：有--修改；无--添加:
+'''a = {
+    'name': 'tianjianyu',
+    'age': 18
+}
+a['gender'] = '男'  # 无则添加
+print(a)
+
+a['name'] = 'zzz'  # 有则修改
+print(a)'''
+
+# 删除：
+'''a = {
+    'name': 'tianjianyu',
+    'age': 18
+}
+del a['age']
+print(a)
+'''
+
+# 循环：
+'''a = {
+    'name': 'tianjianyu',
+    'age': 18
+}
+for item in a.keys():  # 循环key值
+    print(item)
+
+for item in a.values():
+    print(item)  # 循环value值
+
+for key, value in a.items():  # 循环key,value值
+    print(key, value)'''
+
+# 长度：
+'''
+a = {
+    'name': 'tianjianyu',
+    'age': 18
+}
+print(len(a))
+'''
+
+i = 0
+while i < 10:
+    i += 1
+    if i == 7:
+        continue
+    print(i)
