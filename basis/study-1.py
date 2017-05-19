@@ -156,7 +156,24 @@ print(v)'''
 '''val = 'tianjianyu'
 print(val[0])     #第一个
 print(val[0:2])   #第一个到第二个'''
+# 字符串功能总结：
+# https://segmentfault.com/a/1190000009370652
+'''name.upper()
+name.lower()
+name.split()
+name.find()
+name.strip()
+name.startswith()
+name.format()
+name.replace()
+"xmzncc".join(["as",'bb'])'''
+# 额外功能：
 
+'''name[0]
+name[0:3]
+name[0:3:2]
+len(name)'''
+# for循环，每个元素是字符
 
 # 列表（list）
 
