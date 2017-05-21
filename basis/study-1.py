@@ -40,7 +40,6 @@ print (isUpdate, money, say)'''
 # <4>ps:下划线分割
 
 # score = input('请你输入一个分数')
-
 # print(score)
 
 # name = input('please enter your name: ')
@@ -48,18 +47,32 @@ print (isUpdate, money, say)'''
 
 # 整数
 # 创建
-'''a = 123
-print(type(a))
+# a = 123
+# print(type(a))
 # 第二种：
-a = int(123)
-print(type(a))'''
+
+# inputStr = input('请输入一个数')
+
+# try:
+#     score = int(inputStr)
+# except:
+#     score = 0
+
+# if score > 90:
+#     print('优秀')
+# else:
+#     print('差')
+
+
+# a = int('abc')
+# print(type(a))
 
 # 转换
 
 '''age = '18'
-#看下类型
+# 看下类型
 print(type(age))
-#将str转换为int
+# 将str转换为int
 new_age = int(age)
 print(type(new_age))'''
 
@@ -72,12 +85,11 @@ b = False
 print(type(b))'''
 
 # 转换：-数字转换：
-'''a = bool(0)
+'''a = bool(0)# ''   0 
 print(a)
 
-a = bool(1)
-print(a)
-'''
+b = bool('a')  #1 a
+print(b)'''
 
 '''a = '123'
 new_a = bool(a)
@@ -87,15 +99,14 @@ a = ''
 new_a = bool(a)
 print(new_a)'''
 
-
 # 3>字符串
 # 创建：
 '''a = 'tianjianyu'
 print(type(a))
 
-a = str('tianjianyu')
-print(type(a))'''
-
+b = str('tianjianyu')
+print(type(b))
+'''
 
 # 转换
 '''a = 19
@@ -110,6 +121,23 @@ print(type(new_a))
 gender = '男'
 new_str = name + gender
 print(new_str)'''
+
+'''n = 'xmt'
+pwd = 999
+
+name = input('please input your name')
+password = input('please input your password')
+
+if n == name and pwd == password:
+    print('登录成功'+ name + '|' + password)
+else:
+    print ("登录失败" + name + '|' + password)'''
+
+# 单引号和双引号作用一样？
+
+'''a = 999
+new_a = str(a)
+print(type(new_a))'''
 
 # 字符串的格式化
 '''name = 'user:tianjianyu,gender:%s,age:%s'
@@ -277,9 +305,85 @@ a = {
 print(len(a))
 '''
 
-i = 0
+'''i = 0
 while i < 10:
     i += 1
     if i == 7:
         continue
-    print(i)
+    print(i)'''
+
+
+# 自己在内部 写死一个用户名xmt 和密码 666
+# 程序接收用户输入用户名  输入密码
+# 对比用户输入的用户名和密码是否正确
+# 如果正确 打印出: 登录成功 ，欢迎：xxx
+# 如果登录失败  打印出： 登录失败  用户名+|+密码
+# 注意字符串和整数的拼接
+'''n = 'xmt'
+psw = '666'
+name = str(input('请输入用户名'))
+password = str(input('请输入密码'))
+
+
+if n == name and psw == password:
+    print('登录成功')
+else:
+    print('登录失败'+ name + '|' + password)'''
+
+''' 
+age = input('输入你的年龄')
+if type(age) is int:
+    if age >= 18:
+        print('your age is ', age)
+        print('adult')
+    elif age < 18:
+        print('your age is', age)
+        print('kid')
+else:
+    print('输入错误')'''
+
+# list
+# names = ['xmt', 'xj', 'xx']
+
+# print(len(names))
+# print(names[0], names[1], names[2], names[3], names[4])
+# print(names[-1])
+# print(names[len(names)-1])
+
+# names.append('xiaoxiaoxiong')
+# print(names)
+
+'''nums = range(101)
+sum1 = 0
+sum2 = 0
+for num in nums:
+    if num % 2 == 0:
+        sum1 = sum1 + num
+    else:
+        sum2 = sum2 + num
+print(sum1,sum2)'''
+
+'''
+first = nums[0]
+last = nums[-1]
+all = (first + last) * len(nums) / 2'''
+
+# print(sum)
+
+
+'''names = ['xmt','xiongjian','xiaoxiaoxiong']
+for name in names:
+    print('hello'+name)'''
+
+num = 0
+sum1 = 0
+sum2 = 0
+sum3 = 0
+while num < 101:
+    if num % 2 == 0:
+        sum1 = sum1 + num
+    else:
+        sum2 = sum2 + num
+    sum3 = sum3 + num
+    num = num + 1
+print(sum1, sum2, sum3)
