@@ -374,7 +374,7 @@ all = (first + last) * len(nums) / 2'''
 '''names = ['xmt','xiongjian','xiaoxiaoxiong']
 for name in names:
     print('hello'+name)'''
-
+'''
 num = 0
 sum1 = 0
 sum2 = 0
@@ -384,6 +384,89 @@ while num < 101:
         sum1 = sum1 + num
     else:
         sum2 = sum2 + num
+    
     sum3 = sum3 + num
     num = num + 1
-print(sum1, sum2, sum3)
+
+print(sum1, sum2, sum3)'''
+
+
+# 求1-100 的总和  基数和 偶数和
+
+# for while 两种实现
+
+'''nums = range(101)
+sum1 = 0
+sum2 = 0
+
+for num in nums:
+     if num%2==0:
+        sum1 = sum1 + num
+     else:
+        sum2 = sum2 + num
+sum = sum1+sum2
+print(sum1,sum2,sum)'''
+
+'''num = 0
+sum2 = 0
+sum3 = 0
+
+while num < 101:
+    if num % 2 == 0:
+        sum2 = sum2 + num
+    else:
+        sum3 = sum3 + num
+    num = num + 1
+
+sum1 = sum3 + sum2
+print(sum2, sum3, sum1)'''
+
+
+'''name = 'xmt'
+pwd = "123"
+time = 1
+max_num = 3
+while 1 < 2:
+    input_name = input('请输入你的用户名：')
+    input_pwd = input('请输入你的密码')
+    if input_name == name and pwd == input_pwd:
+        print('登录成功')
+        break
+    elif time < max_num:
+        time += 1
+        print('输入用户名或者密码错误')
+    else:
+        print('最多输入三次')
+        break'''
+
+'''time = 1
+while time:
+    name = input('请输入您的用户名：')
+    pwd = input('请输入您的密码：')
+    if name != 'xmt' or pwd != '123':
+        if time < 3:
+            print('登录失败，请重新输入')
+            time += 1
+            continue
+        print('您的登录次数过多，已锁定')
+        break
+    else:
+        print('登录成功')
+        break'''
+
+n = 'xmt'
+psw = '123'
+time = 1
+
+while True:
+    name = input('请输入您的账号')
+    password = input('请输入您的密码')
+    if n == name and psw == password:
+        print('登录成功')
+        break
+    elif time < 3:
+        time += 1
+        print('请输入正确的用户名和密码')
+    else:
+        print('登录次数太多，已锁定')
+        break
