@@ -18,7 +18,8 @@ if not os.path.exists(imgDir):
 
 def getHtml(url):
     headers = {
-        'User-Agent': r'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36',
+        'Upgrade-Insecure-Requests': 1,
+        'User-Agent': r'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
         'Accept': r'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
         'Accept-Encoding': r'gzip, deflate, sdch',
         'Accept-Language': r'zh-CN,zh;q=0.8,en;q=0.6',
@@ -63,6 +64,7 @@ def getImg(pageHtml):
         name = imgDir + str(x) + '.png'
         request.urlretrieve(imgurl[0], name)
         x += 1
+
 
 # print(html)
 getImg(getHtml("http://www.cnblogs.com/fnng/p/3576154.html"))
