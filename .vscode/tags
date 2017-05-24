@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HTTPError	../basis/getjpg.py	/^from urllib.error import URLError, HTTPError$/;"	kind:namespace	line:9
+URLError	../basis/getjpg.py	/^from urllib.error import URLError, HTTPError$/;"	kind:namespace	line:9
+getHtml	../basis/getjpg.py	/^def getHtml(url):$/;"	kind:function	line:18
+getImg	../basis/getjpg.py	/^def getImg(html):$/;"	kind:function	line:50
+getjpg.py	../basis/getjpg.py	1;"	kind:file	line:1
+html	../basis/getjpg.py	/^html = getHtml("http:\/\/www.cnblogs.com\/fnng\/p\/3576154.html")$/;"	kind:variable	line:66
+html	../basis/study.py	/^html = response.read()$/;"	kind:variable	line:207
+imgDir	../basis/getjpg.py	/^imgDir = pwd + '\/imgs\/'$/;"	kind:variable	line:12
+n	../basis/study-1.py	/^n = 'xmt'$/;"	kind:variable	line:457
+name	../basis/study-1.py	/^    name = input('请输入您的账号')$/;"	kind:variable	line:462
+os	../basis/getjpg.py	/^import os$/;"	kind:namespace	line:6
+password	../basis/study-1.py	/^    password = input('请输入您的密码')$/;"	kind:variable	line:463
+psw	../basis/study-1.py	/^psw = '123'$/;"	kind:variable	line:458
+pwd	../basis/getjpg.py	/^pwd = os.path.abspath('.')$/;"	kind:variable	line:11
+re	../basis/getjpg.py	/^import re$/;"	kind:namespace	line:7
+request	../basis/getjpg.py	/^from urllib import request$/;"	kind:namespace	line:8
+request	../basis/study.py	/^import urllib.request$/;"	kind:namespace	line:205
+response	../basis/study.py	/^response = urllib.request.urlopen('http:\/\/www.baidu.com\/')$/;"	kind:variable	line:206
+study-1.py	../basis/study-1.py	1;"	kind:file	line:1
+study.py	../basis/study.py	1;"	kind:file	line:1
+sys	../basis/study-1.py	/^import sys$/;"	kind:namespace	line:4
+sys	../basis/study.py	/^import sys$/;"	kind:namespace	line:3
+time	../basis/study-1.py	/^time = 1$/;"	kind:variable	line:459
+urllib	../basis/study.py	/^import urllib.request$/;"	kind:namespace	line:205

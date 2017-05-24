@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # coding:utf-8
 # https://segmentfault.com/a/1190000009422887
 import sys

@@ -182,7 +182,7 @@ with open('test.txt', 'rb') as f:
     print(s)
 '''
 
-import os
+'''import os
 from datetime import datetime
 
 pwd = os.path.abspath('.')
@@ -199,4 +199,14 @@ for f in os.listdir(pwd):
 
     flag = '/'if os.path.isdir(f) else ''
 
-    print('%10d  %s  %s%s' % (fsize, mtime, f, flag))
+    print('%10d  %s  %s%s' % (fsize, mtime, f, flag))'''
+
+
+'''import urllib.request
+response = urllib.request.urlopen('http://www.baidu.com/')
+html = response.read()
+print(html)'''
+
+import re
+
+print(re.findall("[A-Za-z]", '122133shh23h4h4h4'))
