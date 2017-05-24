@@ -92,7 +92,33 @@ print(power(10, 4))'''
 # 给定一组数字a，b，c……，请计算a2 + b2 + c2 + ……。
 
 
-def calc(*numbers):
+'''def add(x, y, f):
+    return f(x) + f(y)
+
+
+print(add(-5, 9, abs))'''
+
+'''sum = 0
+
+
+def f(x, y):
+    # sum = sum + x * y
+    # print(x, y)
+    return x + y
+
+
+l = reduce(f, [1, 3, 5, 7, 9], 0)
+print(l)
+
+
+def is_odd(x):
+    return x % 2 == 1
+
+
+fl = filter(is_odd, [1, 4, 6, 7, 9, 12, 17])
+print(fl)'''
+
+'''def calc(*numbers):
     sum = 0
     for n in numbers:
         sum = sum + n * n
@@ -100,9 +126,9 @@ def calc(*numbers):
 
 
 print(calc(1, 2, 3))
+'''
 
-
-class Student(object):
+'''class Student(object):
 
     def __init__(self, name, score):
         self.__name = name
@@ -132,3 +158,45 @@ class Student(object):
 xmt = Student('xmt', 59)
 print(xmt.get_name())
 print(xmt.get_score())
+'''
+
+'''import math
+
+print(math.pow(2, 10), __name__)'''
+
+
+'''from datetime import datetime
+
+with open('test.txt', 'w') as f:
+    f.write('今天是 ')
+    f.write(datetime.now().strftime('%Y-%m-%d'))
+
+with open('test.txt', 'r') as f:
+    s = f.read()
+    print('open for read...')
+    print(s)
+
+with open('test.txt', 'rb') as f:
+    s = f.read()
+    print('open as binary for read...')
+    print(s)
+'''
+
+import os
+from datetime import datetime
+
+pwd = os.path.abspath('.')
+
+
+print('      Size     Last Modified  Name')
+print('------------------------------------------------------------')
+
+for f in os.listdir(pwd):
+    fsize = os.path.getsize(f)
+
+    mtime = datetime.fromtimestamp(
+        os.path.getmtime(f)).strftime('%Y-%m-%d %H:%M')
+
+    flag = '/'if os.path.isdir(f) else ''
+
+    print('%10d  %s  %s%s' % (fsize, mtime, f, flag))
