@@ -64,9 +64,7 @@ def getImg(pageHtml):
         request.urlretrieve(imgurl[0], name)
         x += 1
 
-
-html = getHtml("http://www.cnblogs.com/fnng/p/3576154.html")
 # print(html)
-getImg(html)
+getImg(getHtml("http://www.cnblogs.com/fnng/p/3576154.html"))
 
 # print html
