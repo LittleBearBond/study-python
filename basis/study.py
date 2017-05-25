@@ -207,6 +207,12 @@ response = urllib.request.urlopen('http://www.baidu.com/')
 html = response.read()
 print(html)'''
 
-import re
 
-print(re.findall("[A-Za-z]", '122133shh23h4h4h4'))
+
+'''import re
+print(re.findall("[A-Za-z]", '122133shh23h4h4h4'))'''
+
+from collections import Iterable, Iterator
+ 
+for x in iter([1, 2, 3, 4, 5]):
+    print(x)
