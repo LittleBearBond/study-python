@@ -4,27 +4,25 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-HTTPError	../basis/getjpg.py	/^from urllib.error import URLError, HTTPError$/;"	kind:namespace	line:9
-URLError	../basis/getjpg.py	/^from urllib.error import URLError, HTTPError$/;"	kind:namespace	line:9
-getHtml	../basis/getjpg.py	/^def getHtml(url):$/;"	kind:function	line:18
-getImg	../basis/getjpg.py	/^def getImg(html):$/;"	kind:function	line:50
+HTTPError	../basis/getjpg.py	/^from urllib.error import URLError, HTTPError$/;"	kind:namespace	line:10
+Iterable	../basis/study.py	/^from collections import Iterable, Iterator$/;"	kind:namespace	line:215
+Iterator	../basis/study.py	/^from collections import Iterable, Iterator$/;"	kind:namespace	line:215
+URLError	../basis/getjpg.py	/^from urllib.error import URLError, HTTPError$/;"	kind:namespace	line:10
+getHtml	../basis/getjpg.py	/^def getHtml(url):$/;"	kind:function	line:19
+getImg	../basis/getjpg.py	/^def getImg(pageHtml):$/;"	kind:function	line:57
 getjpg.py	../basis/getjpg.py	1;"	kind:file	line:1
-html	../basis/getjpg.py	/^html = getHtml("http:\/\/www.cnblogs.com\/fnng\/p\/3576154.html")$/;"	kind:variable	line:66
-html	../basis/study.py	/^html = response.read()$/;"	kind:variable	line:207
-imgDir	../basis/getjpg.py	/^imgDir = pwd + '\/imgs\/'$/;"	kind:variable	line:12
+gzip	../basis/getjpg.py	/^import gzip$/;"	kind:namespace	line:8
+imgDir	../basis/getjpg.py	/^imgDir = pwd + '\/imgs\/'$/;"	kind:variable	line:13
 n	../basis/study-1.py	/^n = 'xmt'$/;"	kind:variable	line:457
 name	../basis/study-1.py	/^    name = input('请输入您的账号')$/;"	kind:variable	line:462
 os	../basis/getjpg.py	/^import os$/;"	kind:namespace	line:6
 password	../basis/study-1.py	/^    password = input('请输入您的密码')$/;"	kind:variable	line:463
 psw	../basis/study-1.py	/^psw = '123'$/;"	kind:variable	line:458
-pwd	../basis/getjpg.py	/^pwd = os.path.abspath('.')$/;"	kind:variable	line:11
+pwd	../basis/getjpg.py	/^pwd = os.path.abspath('.')$/;"	kind:variable	line:12
 re	../basis/getjpg.py	/^import re$/;"	kind:namespace	line:7
-request	../basis/getjpg.py	/^from urllib import request$/;"	kind:namespace	line:8
-request	../basis/study.py	/^import urllib.request$/;"	kind:namespace	line:205
-response	../basis/study.py	/^response = urllib.request.urlopen('http:\/\/www.baidu.com\/')$/;"	kind:variable	line:206
+request	../basis/getjpg.py	/^from urllib import request$/;"	kind:namespace	line:9
 study-1.py	../basis/study-1.py	1;"	kind:file	line:1
 study.py	../basis/study.py	1;"	kind:file	line:1
 sys	../basis/study-1.py	/^import sys$/;"	kind:namespace	line:4
 sys	../basis/study.py	/^import sys$/;"	kind:namespace	line:3
 time	../basis/study-1.py	/^time = 1$/;"	kind:variable	line:459
-urllib	../basis/study.py	/^import urllib.request$/;"	kind:namespace	line:205
